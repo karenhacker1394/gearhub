@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>GearHub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family:'Vazirmatn',sans-serif;
+}
+
+body{
+    margin:0;
+    background:#080b14;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:50px;
+    background:linear-gradient(135deg,#111827,#0066ff);
+}
+
+h1{
+    font-size:50px;
+}
+
+nav{
+    text-align:center;
+    background:#111;
+    padding:20px;
+}
+
+button{
+    background:#151d2e;
+    color:white;
+    border:1px solid #00eaff;
+    padding:12px 25px;
+    border-radius:15px;
+    margin:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#00eaff;
+    color:black;
+}
+
+main{
+    text-align:center;
+    padding:30px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:230px;
+    padding:35px;
+    background:#121827;
+    border:1px solid #00eaff;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00eaff;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>⚡ GearHub</h1>
+<p>مرکز ابزارهای خفن دیجیتال</p>
+</header>
+
+
+<nav>
+<button onclick="home()">خانه</button>
+<button onclick="tools()">ابزارها</button>
+<button onclick="about()">درباره ما</button>
+</nav>
+
+
+<main>
+
+<h2>ابزارهای محبوب</h2>
+
+<div class="cards">
+
+<div class="card" onclick="window.open('https://www.photopea.com','_blank')">
+🎨 Photopea
+</div>
+
+<div class="card" onclick="window.open('https://codepen.io','_blank')">
+💻 Code Editor
+</div>
+
+<div class="card" onclick="window.open('https://www.remove.bg','_blank')">
+🖼 Remove BG
+</div>
+
+</div>
+
+</main>
+
+
+<script>
+
+function openTool(name){
+    alert("باز کردن ابزار: " + name);
+}
+
+function home(){
+    alert("صفحه خانه");
+}
+
+function tools(){
+    alert("لیست ابزارها");
+}
+
+function about(){
+    alert("GearHub یک مرکز ابزار دیجیتال است");
+}
+
+</script>
+
+
+</body>
+</html>
